@@ -1,10 +1,9 @@
-var React = require('react');
-var transparentBg = require('../styles').transparentBg;
-var ReactRouter = require('react-router');
-var Link = ReactRouter.Link;
+import React, { Component } from 'react'
+import { transparentBg } from '../styles'
+import { Link } from 'react-router'
 
-var Home = React.createClass({
-  render: function() {
+class Home extends Component {
+  render () {
     return (
       <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
         <h1>My New Fancy App</h1>
@@ -15,6 +14,5 @@ var Home = React.createClass({
       </div>
     )
   }
-});
-
-module.exports = Home;
+};
+export default Home
